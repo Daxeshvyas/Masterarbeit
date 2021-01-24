@@ -60,8 +60,8 @@ colorbar
 f = 0.78125;
 n = 50;
 a = fir1(n , f, 'low');
-% b = fir1(n, f, 'low');
-% o = filter(a , 1, d);
+b = fir1(n, f, 'low');
+o = filter(a , 1, d);
 p = filter(a, 1, d);
 % fvtool(1, 1);
 figure(8)
@@ -98,8 +98,8 @@ ylabel('Amplitude')
 xlabel(' Time(S)')
 title('Envelope')
 
-% subplot(3,1,3)
-% plot(t, fft(analytic_signal))
+subplot(3,1,3)
+plot(t, fft(analytic_signal))
 
 
 
